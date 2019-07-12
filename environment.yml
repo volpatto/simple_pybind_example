@@ -4,10 +4,9 @@ channels:
 dependencies:
   # All cpp stack dependencies
   - eigen 
-  - clangdev 
-  - cling 
-  - xeus 
-  - xeus-cling
+  - clangdev ==6.0
+  - cmake
+  - make
 
   # For the bindings
   - pybind11
@@ -21,4 +20,3 @@ dependencies:
   - scipy 
   - numpy 
   - pandas
-  
