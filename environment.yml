@@ -1,0 +1,24 @@
+name: cpp-bindings
+channels:
+  - https://conda.anaconda.org/conda-forge/
+dependencies:
+  # All cpp stack dependencies
+  - eigen 
+  - clangdev 
+  - cling 
+  - xeus 
+  - xeus-cling
+
+  # For the bindings
+  - pybind11
+  
+  # Additional python resources
+  - notebook 
+  - ipywidgets 
+  - widgetsnbextension 
+  - jupyter_contrib_nbextensions 
+  - python 
+  - scipy 
+  - numpy 
+  - pandas
+  
