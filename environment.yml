@@ -4,7 +4,7 @@ channels:
 dependencies:
   # All cpp stack dependencies
   - eigen 
-  - clangdev ==6.0
+  - clangdev >=6.0
   - cmake
   - make
 

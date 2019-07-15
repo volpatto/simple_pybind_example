@@ -1,13 +1,16 @@
 cmake_minimum_required(VERSION 2.8.12)
-project(simple_pybind_example LANGUAGES CXX)
+project(simple_pybind_example)
 
 set(CMAKE_CXX_STANDARD 14)
-set(CMAKE_MODULE_PATH /home/diego/Work/miniconda/envs/cpp-bindings/bin/cmake)
 
-include_directories(example)
-find_package(pybind11)
+# Set source directory
+set(SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/python_package/cpp_package")
 
-add_executable(simple_pybind_example
-        example/example.cpp)
+# Tell CMake that headers are also in SOURCE_DIR
+include_directories(${SOURCE_DIR})
 
-pybind11_add_module(example example/example.cpp)
+set(SOURCES "${SOURCE_DIR}/example_cpp.cpp")
+
+# Generate Python module with pybind11
+add_subdirectory(third_party/pybind11)
+pybind11_add_module(cpp_example ${SOURCES} "${SOURCE_DIR}/bindings.cpp")
