@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.12)
-project(simple_pybind_example)
+project(simple_pybind_example LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 14)
 
