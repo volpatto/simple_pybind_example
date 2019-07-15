@@ -2,9 +2,4 @@
 // Created by volps on 15/07/19.
 //
 
-#ifndef SIMPLE_PYBIND_EXAMPLE_EXAMPLE_CPP_HPP
-#define SIMPLE_PYBIND_EXAMPLE_EXAMPLE_CPP_HPP
-
 int add(int i, int j);
-
-#endif //SIMPLE_PYBIND_EXAMPLE_EXAMPLE_CPP_HPP

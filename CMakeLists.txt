@@ -13,4 +13,4 @@ set(SOURCES "${SOURCE_DIR}/example_cpp.cpp")
 
 # Generate Python module with pybind11
 add_subdirectory(third_party/pybind11)
-pybind11_add_module(cpp_example ${SOURCES} "${SOURCE_DIR}/bindings.cpp")
+pybind11_add_module(example ${SOURCES} "${SOURCE_DIR}/bindings.cpp")
