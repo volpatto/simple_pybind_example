@@ -4,7 +4,7 @@ project(simple_pybind_example)
 set(CMAKE_CXX_STANDARD 14)
 
 # Set source directory
-set(SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/python_package/cpp_package")
+set(SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/python_package/_cpp_package")
 
 # Tell CMake that headers are also in SOURCE_DIR
 include_directories(${SOURCE_DIR})
