@@ -3,6 +3,11 @@
 //
 #include "example_cpp.hpp"
 
-int add(int i, int j) {
+namespace example_cpp {
+
+int add(int i, int j)
+{
     return i + j;
+}
+
 }

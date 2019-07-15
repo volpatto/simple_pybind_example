@@ -28,12 +28,12 @@ endif()
 option(PYBIND11_INSTALL "Install pybind11 header files?" ${PYBIND11_MASTER_PROJECT})
 option(PYBIND11_TEST    "Build pybind11 test suite?"     ${PYBIND11_MASTER_PROJECT})
 
-list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/tools")
+list(APPEND CMAKE_MODULE_PATH "tools")
 
 include(pybind11Tools)
 
 # Cache variables so pybind11_add_module can be used in parent projects
-set(PYBIND11_INCLUDE_DIR "${CMAKE_CURRENT_LIST_DIR}/include" CACHE INTERNAL "")
+set(PYBIND11_INCLUDE_DIR "include" CACHE INTERNAL "")
 set(PYTHON_INCLUDE_DIRS ${PYTHON_INCLUDE_DIRS} CACHE INTERNAL "")
 set(PYTHON_LIBRARIES ${PYTHON_LIBRARIES} CACHE INTERNAL "")
 set(PYTHON_MODULE_PREFIX ${PYTHON_MODULE_PREFIX} CACHE INTERNAL "")
@@ -43,31 +43,31 @@ set(PYTHON_VERSION_MINOR ${PYTHON_VERSION_MINOR} CACHE INTERNAL "")
 
 # NB: when adding a header don't forget to also add it to setup.py
 set(PYBIND11_HEADERS
-  include/pybind11/detail/class.h
-  include/pybind11/detail/common.h
-  include/pybind11/detail/descr.h
-  include/pybind11/detail/init.h
-  include/pybind11/detail/internals.h
-  include/pybind11/detail/typeid.h
-  include/pybind11/attr.h
-  include/pybind11/buffer_info.h
-  include/pybind11/cast.h
-  include/pybind11/chrono.h
-  include/pybind11/common.h
-  include/pybind11/complex.h
-  include/pybind11/options.h
-  include/pybind11/eigen.h
-  include/pybind11/embed.h
-  include/pybind11/eval.h
-  include/pybind11/functional.h
-  include/pybind11/numpy.h
-  include/pybind11/operators.h
-  include/pybind11/pybind11.h
-  include/pybind11/pytypes.h
-  include/pybind11/stl.h
-  include/pybind11/stl_bind.h
+        include/pybind11/detail/class.h
+        include/pybind11/detail/common.h
+        include/pybind11/detail/descr.h
+        include/pybind11/detail/init.h
+        include/pybind11/detail/internals.h
+        include/pybind11/detail/typeid.h
+        include/pybind11/attr.h
+        include/pybind11/buffer_info.h
+        include/pybind11/cast.h
+        include/pybind11/chrono.h
+        include/pybind11/common.h
+        include/pybind11/complex.h
+        include/pybind11/options.h
+        include/pybind11/eigen.h
+        include/pybind11/embed.h
+        include/pybind11/eval.h
+        include/pybind11/functional.h
+        include/pybind11/numpy.h
+        include/pybind11/operators.h
+        include/pybind11/pybind11.h
+        include/pybind11/pytypes.h
+        include/pybind11/stl.h
+        include/pybind11/stl_bind.h
 )
-string(REPLACE "include/" "${CMAKE_CURRENT_SOURCE_DIR}/include/"
+string(REPLACE "include" "include"
        PYBIND11_HEADERS "${PYBIND11_HEADERS}")
 
 if (PYBIND11_TEST)
@@ -137,8 +137,8 @@ if (PYBIND11_INSTALL)
   set(CMAKE_SIZEOF_VOID_P ${_PYBIND11_CMAKE_SIZEOF_VOID_P})
   install(FILES ${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}Config.cmake
                 ${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}ConfigVersion.cmake
-                tools/FindPythonLibsNew.cmake
-                tools/pybind11Tools.cmake
+          tools/FindPythonLibsNew.cmake
+          tools/pybind11Tools.cmake
           DESTINATION ${PYBIND11_CMAKECONFIG_INSTALL_DIR})
 
   if(NOT (CMAKE_VERSION VERSION_LESS 3.0))
