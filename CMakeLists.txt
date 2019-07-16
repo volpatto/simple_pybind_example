@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 2.8.12)
 project(simple_pybind_example LANGUAGES CXX)
+find_package(pybind11)
 
 set(CMAKE_CXX_STANDARD 14)
 
@@ -12,5 +13,4 @@ include_directories(${SOURCE_DIR})
 set(SOURCES "${SOURCE_DIR}/example_cpp.cpp")
 
 # Generate Python module with pybind11
-add_subdirectory(third_party/pybind11)
 pybind11_add_module(example ${SOURCES} "${SOURCE_DIR}/bindings.cpp")
