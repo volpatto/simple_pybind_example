@@ -5,4 +5,4 @@ add_library(
             example_cpp.hpp
 )
 
-install(TARGETS example DESTINATION build)
+#install(TARGETS example DESTINATION build)
