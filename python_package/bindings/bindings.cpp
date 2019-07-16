@@ -1,9 +1,5 @@
-//
-// Created by volps on 15/07/19.
-//
-
 #include <pybind11/pybind11.h>
-#include "example_cpp.hpp"
+#include <example/example_cpp.hpp>
 
 namespace py = pybind11;
 
