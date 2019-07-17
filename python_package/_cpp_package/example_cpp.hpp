@@ -2,4 +2,10 @@
 // Created by volps on 15/07/19.
 //
 
-int add(int i, int j);
+namespace example_cpp {
+
+    int add(int i, int j);
+
+    double add(double i, double j);
+
+}

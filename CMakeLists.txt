@@ -1,16 +1,16 @@
 cmake_minimum_required(VERSION 2.8.12)
-project(simple_pybind_example LANGUAGES CXX)
+project(simple_pybind_example LANGUAGES CXX C)
+find_package(PythonInterp 3.7 REQUIRED)
 
 set(CMAKE_CXX_STANDARD 14)
+set(PYBIND11_PYTHON_VERSION 3.7 CACHE STRING "")
 
-# Set source directory
-set(SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/python_package/_cpp_package")
+message("\n*** Dependencies:")
+message("-- pybind11_DIR: " ${pybind11_DIR})
+message("-- Python executable: " ${PYTHON_EXECUTABLE})
+message("***\n")
 
-# Tell CMake that headers are also in SOURCE_DIR
-include_directories(${SOURCE_DIR})
+set(ARTIFACTS_PATH ${CMAKE_SOURCE_DIR}/python_package/cpp_binding)
 
-set(SOURCES "${SOURCE_DIR}/example_cpp.cpp")
-
-# Generate Python module with pybind11
-add_subdirectory(third_party/pybind11)
-pybind11_add_module(example ${SOURCES} "${SOURCE_DIR}/bindings.cpp")
+add_subdirectory(python_package/_cpp_package)
+add_subdirectory(python_package/bindings)

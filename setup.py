@@ -1,11 +1,10 @@
 import os
-import re
-import sys
-import sysconfig
 import platform
+import re
 import subprocess
-
+import sys
 from distutils.version import LooseVersion
+
 from setuptools import setup, find_packages, Extension
 from setuptools.command.build_ext import build_ext
 
@@ -76,9 +75,9 @@ setup(
     long_description='',
     packages=find_packages('python_package'),
     package_dir={'': 'python_package'},
-    # add an extension module named 'python_cpp_example' to the package
-    # 'python_cpp_example'
-    ext_modules=[CMakeExtension('cpp_binding/_cpp_package')],
+    # add an extension module named 'cpp_binding' to the package
+    # 'python_package'
+    ext_modules=[CMakeExtension('cpp_binding/python_package')],
     # add custom build_ext command
     cmdclass=dict(build_ext=CMakeBuild),
     zip_safe=False,
