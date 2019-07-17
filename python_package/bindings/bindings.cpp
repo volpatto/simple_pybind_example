@@ -4,7 +4,9 @@
 namespace py = pybind11;
 
 PYBIND11_MODULE(example_binding, m) {
-m.doc() = "pybind11 python_package plugin"; // optional module docstring
+    m.doc() = "pybind11 python_package plugin"; // optional module docstring
 
-m.def("add", &example_cpp::add, "A function which adds two numbers");
+    m.def("add", (int (*) (int, int)) &example_cpp::add, "A function which adds two numbers", py::arg("i"), py::arg("j"));
+    m.def("add", (double (*) (double, double)) &example_cpp::add, "A function which adds two numbers", py::arg("i"), py::arg("j"));
+
 }

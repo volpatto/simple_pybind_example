@@ -1,4 +1,4 @@
-from python_package.cpp_binding.example import add
+from python_package.cpp_binding.example_binding import add
 
 
 def hello():

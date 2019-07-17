@@ -13,6 +13,7 @@ dependencies:
 - numpy
 - pandas
 - pybind11
+- pytest
 - python
 - scipy
 - widgetsnbextension

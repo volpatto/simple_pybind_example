@@ -22,6 +22,5 @@ dependencies:
   - numpy 
   - pandas
 
-environment:
-  PYTHONPATH:
-    - {{ root }}/artifacts
+  # For python tests
+  - pytest

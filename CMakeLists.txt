@@ -10,7 +10,7 @@ message("-- pybind11_DIR: " ${pybind11_DIR})
 message("-- Python executable: " ${PYTHON_EXECUTABLE})
 message("***\n")
 
-set(ARTIFACTS_PATH ${CMAKE_SOURCE_DIR}/python_package/example_binding)
+set(ARTIFACTS_PATH ${CMAKE_SOURCE_DIR}/python_package/cpp_binding)
 
 add_subdirectory(python_package/_cpp_package)
 add_subdirectory(python_package/bindings)
