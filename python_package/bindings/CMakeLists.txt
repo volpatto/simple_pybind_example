@@ -9,7 +9,7 @@ pybind11_add_module(
         example_binding
             bindings.cpp
 )
-#target_link_libraries(example)
+
 target_link_libraries(
         example_binding
         PRIVATE

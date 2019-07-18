@@ -1,6 +1,3 @@
-//
-// Created by diego on 12/07/19.
-//
 #include "example_cpp.hpp"
 
 namespace example_cpp {
