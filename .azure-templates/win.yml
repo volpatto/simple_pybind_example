@@ -31,6 +31,6 @@ jobs:
 
   - script: |
       call activate cpp-bindings
-      python3 setup.py install
-      python3 setup.py test
+      python setup.py install
+      python setup.py test
     displayName: 'Installation and tests'
