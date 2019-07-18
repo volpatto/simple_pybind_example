@@ -36,7 +36,7 @@ install:
 - |
   $CONDA devenv
   source $CONDA_BIN/activate cpp-bindings
-  python3 setup.py sdist
-  pip3 install --verbose dist/*.tar.gz
+  python setup.py sdist
+  pip install --verbose dist/*.tar.gz
 script:
 - pytest .
