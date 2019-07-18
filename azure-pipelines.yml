@@ -8,3 +8,11 @@ jobs:
 - template: .azure-templates/linux.yml
 
 - template: .azure-templates/win.yml
+
+schedules:
+  - cron: "0 12 * * 0"
+    displayName: Weekly Sunday build
+    branches:
+      include:
+        - master
+    always: true
