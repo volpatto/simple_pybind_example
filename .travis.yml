@@ -1,0 +1,33 @@
+language: generic
+dist: trusty
+branches:
+  only:
+    - master
+matrix:
+  include:
+  - os: linux
+    env: PYTHON=3.7
+  - os: osx
+    env: PYTHON=3.7
+before_install:
+  - if [ "$TRAVIS_OS_NAME" = "linux" ]; then OS=Linux-x86_64; else OS=MacOSX-x86_64; fi
+  - if test -e $HOME/miniconda/bin; then
+      echo "miniconda already installed.";
+    else
+      echo "Installing miniconda.";
+      rm -rf $HOME/miniconda;
+      wget -O miniconda.sh https://repo.continuum.io/miniconda/Miniconda3-latest-$OS.sh;
+      bash miniconda.sh -b -p $HOME/miniconda;
+    fi
+  - export CONDA_BIN=$HOME/miniconda/bin
+  - export CONDA=$CONDA_BIN/conda
+  - $CONDA config --system --set always_yes yes --set changeps1 false
+  - $CONDA config --system --append channels conda-forge
+  - $CONDA install -n base conda-devenv conda=4.6.14
+install:
+  - |
+    $CONDA devenv
+    source $CONDA_BIN/activate cpp-bindings
+    python3 setup.py install
+script:
+  - python3 setup.py test
