@@ -4,17 +4,9 @@ channels:
 dependencies:
 - clangdev >=6.0
 - cmake
-- eigen
-- ipython
-- ipywidgets
-- jupyter_contrib_nbextensions
 - make
-- notebook
-- numpy
-- pandas
 - pybind11
 - pytest
-- python
-- scipy
-- widgetsnbextension
+- pytest-runner
+- python >=3.6.7
 name: cpp-bindings

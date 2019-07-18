@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 2.8.12)
 project(simple_pybind_example LANGUAGES CXX C)
-find_package(PythonInterp 3.7 REQUIRED)
+#find_package(PythonInterp 3.6 REQUIRED)
 
 set(CMAKE_CXX_STANDARD 14)
-set(PYBIND11_PYTHON_VERSION 3.7 CACHE STRING "")
+#set(PYBIND11_PYTHON_VERSION 3.7 CACHE STRING "")
 
 message("\n*** Dependencies:")
 message("-- pybind11_DIR: " ${pybind11_DIR})
