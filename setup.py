@@ -75,6 +75,8 @@ setup(
     long_description='',
     packages=find_packages('python_package'),
     package_dir={'': 'python_package'},
+    setup_requires=['pytest-runner'],
+    tests_require=['pytest'],
     # add an extension module named 'cpp_binding' to the package
     # 'python_package'
     ext_modules=[CMakeExtension('cpp_binding/python_package')],

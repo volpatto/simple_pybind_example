@@ -7,5 +7,6 @@ dependencies:
 - make
 - pybind11
 - pytest
+- pytest-runner
 - python >=3.6.7
 name: cpp-bindings
