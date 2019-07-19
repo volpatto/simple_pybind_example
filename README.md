@@ -94,7 +94,7 @@ python setup.py test
 ## Prerequisites
 
 I create isolated environments with [conda](https://conda.io/en/latest/). You can use and create an environment with all the
-requirement just doing in the repo root:
+requirement just doing the following in the repo root:
 
 ```console
 conda env create -f environment.yml
