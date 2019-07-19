@@ -128,7 +128,7 @@ of the present repo, please feel free to open an issue or, even better, send a P
 
 > "- Oh! I think this repo is a good starting point for a project I have in mind! Can I use it?!"
 
-Don't say more. Free software, MIT license. If it help you in any way, I will be very happy! At least I help someone! This way I am contributing to a better world.
+Don't say more. Free software, MIT license. If it help you in any way, I will be very happy! At least I helped someone! This way I am contributing to a better world.
 
 ## Contact
 
