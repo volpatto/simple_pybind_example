@@ -12,7 +12,7 @@ Here, a simple example about how to bind C++ code in Python is provided. The str
 ## Now a longer description
 
 My idea is provide a structure to bind a C++ extension code to a Python base code. The C++ library (here, the extension we want to bind) can be anything that compiles standalone with its own `CMakeLists` (I use `CMake` here, so deal with it), and is exposed as a library that can be linked by others `CMakeLists`s.
-The structure design aims to plug this extension in the Python base code by providing a binding interface using
+The structural design aims to plug this extension in the Python base code by providing a binding interface using
 [pybind11](https://github.com/pybind/pybind11). Pursuing a generic purpose, I separate the binding module from the C++ extension code. Why? Well, my big and bold target here is to be not invasive while binding, so the binding duty is out of the
 C++ target library. Let's dive in to understand it better.
 
