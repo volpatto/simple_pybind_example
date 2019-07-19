@@ -1,6 +1,6 @@
 # Simple pybind example
 
-| Plataform                               	| Build status 	|
+| Platform                               	| Build status 	|
 |-----------------------------------------	|--------------	|
 | Ubuntu 14.04 LTS and Mac OS X 10.13.3 	|  [![Build Status](https://travis-ci.com/volpatto/simple_pybind_example.svg?branch=master)](https://travis-ci.com/volpatto/simple_pybind_example)            	|
 | Ubuntu 16.04 LTS and Windows 2019       	|  [![Build Status](https://dev.azure.com/volpatto/volpatto/_apis/build/status/volpatto.simple_pybind_example?branchName=master)](https://dev.azure.com/volpatto/volpatto/_build/latest?definitionId=3&branchName=master)            	|
