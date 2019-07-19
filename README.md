@@ -91,7 +91,7 @@ terminal:
 python setup.py test
 ```
 
-## Prerequisites
+## Requirements
 
 I create isolated environments with [conda](https://conda.io/en/latest/). You can use and create an environment with all the
 requirement just doing the following in the repo root:
@@ -120,7 +120,7 @@ You could use Python `virtualenv`s as well, I think it wouldn't be a problem (bu
 
 > "- Oh! I think you did a terrible work here. This repo is a piece of LOVE!" (edited due to educational reasons)
 
-Thank you! You are very nice! I think you are also a great coder, probably far better than myself (I try my best, I 
+Thank you! You are very nice! I think you are also a great programmer, probably far better than me (I try my best, I 
 promise). If you have any suggestion, correction, improvements or anything that could increase the quality of the content
 of the present repo, please feel free to open an issue or, even better, send a PR. I will **really** appreciate that!
 
