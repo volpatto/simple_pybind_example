@@ -104,8 +104,7 @@ This will create an environment named `cpp-bindings`. Activate it and you will g
 
 > "- Oh! I don't use conda! I even don't know how to use it. Wait, I even don't know what is conda! What could I do?"
 
-Well, no problem. Be sure that you have the following things are installed in the system (or anything you prefer rather than
-`conda env`s):
+Well, no problem. Be sure that you have the following things properly installed in your system (or anything you prefer rather than `conda env`s):
 
 * clangdev >=6.0 (I use `clang` compiler here, but things *should* work OK with `g++` as well)
 * cmake
