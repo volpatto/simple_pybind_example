@@ -7,7 +7,7 @@
 
 ## TL;DR
 
-Here, a simple example about how to bind C++ code in Python is provided. The structure try to be not invasive as much as possible concerning the C++ extension. 
+Here, a simple example about how to bind C++ code in Python is provided. The structure tries to be not invasive as much as possible concerning the C++ extension. 
 
 ## Now a longer description
 
