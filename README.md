@@ -67,7 +67,7 @@ or even with the beloved `pip`:
 pip install -e ./
 ```
 
-Everything above will install the Python package with the C++ extension for you (in a develop mode, btw, but working). The
+Everything above will install the Python package with the C++ extension for you (in a development mode, btw, but working). The
 `setup.py` is heavily based on the [official pybind11 cmake example](https://github.com/pybind/cmake_example) and
 in this [helpful post here](https://www.benjack.io/2018/02/02/python-cpp-revisited.html). To be honest, 
 I must say that these two sources inspired me also in several others features I aimed to reach here. So kudos to the authors!
