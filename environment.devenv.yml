@@ -12,6 +12,7 @@ dependencies:
   
   # Python requirements
   - python >=3.6.7
+  - setuptools
 
   # For python tests
   - pytest
