@@ -1,6 +1,4 @@
 find_package(pybind11 REQUIRED)
-#set(pybind11_DIR third_party/pybind11/tools)
-#include(pybind11Tools)
 
 include_directories("${PROJECT_SOURCE_DIR}/python_package/_cpp_package")
 
