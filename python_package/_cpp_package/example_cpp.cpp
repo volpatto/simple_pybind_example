@@ -12,4 +12,8 @@ namespace example_cpp {
         return i + j;
     }
 
+    double f_multiply_wrapper(const std::function<double(double, double)>& f, double a, double b) {
+        return f(a, b);
+    }
+
 }
