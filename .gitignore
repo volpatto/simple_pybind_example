@@ -31,5 +31,3 @@
 *.out
 *.app
 
-# Env files
-environment.yml

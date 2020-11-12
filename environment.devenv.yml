@@ -3,7 +3,7 @@ channels:
   - https://conda.anaconda.org/conda-forge/
 dependencies:
   # All cpp stack dependencies
-  - clangdev >=6.0
+  - gxx_linux-64  # [linux]
   - cmake
   - make
 
