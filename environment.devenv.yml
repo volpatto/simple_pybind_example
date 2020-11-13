@@ -4,7 +4,7 @@ channels:
 dependencies:
   # All cpp stack dependencies
   - gxx_linux-64  # [linux]
-  - cmake
+  - cmake <3.18
   - make
 
   # For the bindings
