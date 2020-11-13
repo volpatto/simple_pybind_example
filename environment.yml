@@ -2,7 +2,7 @@
 channels:
 - https://conda.anaconda.org/conda-forge/
 dependencies:
-- cmake
+- cmake <3.18
 - gxx_linux-64
 - make
 - pybind11
